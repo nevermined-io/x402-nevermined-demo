@@ -3,25 +3,52 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@dynamic-labs/ethereum": "^4.17.0",
+    "@dynamic-labs/sdk-react-core": "^4.17.0",
+    "@nevermined-io/sdk": "3.1.3-rc1",
+    "@radix-ui/react-dialog": "^1.1.13",
+    "@radix-ui/react-dropdown-menu": "^2.1.14",
+    "@radix-ui/react-label": "^2.1.6",
+    "@radix-ui/react-navigation-menu": "^1.2.12",
+    "@radix-ui/react-separator": "^1.1.6",
+    "@radix-ui/react-slot": "^1.2.2",
+    "@radix-ui/react-switch": "^1.2.4",
+    "@radix-ui/react-tooltip": "^1.2.6",
+    "@wagmi/core": "^2.17.1",
+    "axios": "^1.9.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.5.0",
+    "lucide-react": "^0.507.0",
+    "next": "15.3.2",
+    "next-themes": "^0.4.6",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "tailwind-merge": "^3.2.0",
+    "viem": "^2.29.0",
+    "x402-axios": "^0.3.1",
+    "x402-fetch": "^0.3.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@nevermined-io/payments": "^0.9.3",
+    "@tailwindcss/postcss": "^4.1.5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "pino-pretty": "^13.0.0",
+    "tailwindcss": "^4.1.5",
+    "tw-animate-css": "^1.2.9",
+    "typescript": "^5"
   }
 }
