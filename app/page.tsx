@@ -103,7 +103,7 @@ export default function Home() {
               </NavigationMenuItem>
               
               <NavigationMenuItem>
-                <Link href="https://github.com/pskinnertech/x402" target="_blank" className={navigationMenuTriggerStyle()}>
+                <Link href="https://github.com/nevermined-io/x402-nevermined-demo" target="_blank" className={navigationMenuTriggerStyle()}>
                   GitHub
                 </Link>
               </NavigationMenuItem>
@@ -171,7 +171,7 @@ export default function Home() {
           
           <div className="flex gap-4">
             <LoginWidget size="large" />
-            <Link href="https://github.com/pskinnertech/x402" target="_blank">
+            <Link href="https://github.com/nevermined-io/x402-nevermined-demo" target="_blank">
               <Button size="lg" variant="outline">View Source</Button>
             </Link>
           </div>
