@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 # X402 + Nevermined: AI Agent Economy Integration
 
+![X402 + Nevermined Demo Landing Page](/Screenshot%202025-05-09%20at%2012.29.55.png)
+
 This project demonstrates a complete integration of the [x402 Payment Protocol](https://docs.x402.org/) with [Nevermined](https://nevermined.io/) to create a powerful system for AI agent monetization and agent-to-agent interactions.
 
 ## The Problem We're Solving
