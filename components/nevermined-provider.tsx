@@ -198,6 +198,11 @@ export function NeverminedProvider({ children }: NeverminedProviderProps) {
         console.log('[Nevermined] Starting SDK initialization...');
         const appId = process.env.NEXT_PUBLIC_NEVERMINED_APP_ID || 'x402-nvm-integration';
         const returnUrl = process.env.NEXT_PUBLIC_NEVERMINED_RETURN_URL || 'http://localhost:3000/callback';
+        const nvmApiKey = process.env.NEXT_PUBLIC_NVM_API_KEY;
+
+        if (!nvmApiKey) {
+          console.error('[Nevermined] NEXT_PUBLIC_NVM_API_KEY is not set');
+        }
         
         // Try using 'testing' environment which is mentioned in the documentation
         const config = {
@@ -205,7 +210,9 @@ export function NeverminedProvider({ children }: NeverminedProviderProps) {
           returnUrl,
           // Using 'testing' environment which should be pre-configured in the SDK
           environment: 'testing' as EnvironmentName,
-          version: 'v1.0.0'
+          version: 'v1.0.0',
+          // Pass API key for the browser SDK to parse
+          nvmApiKey
         };
         
         console.log('[Nevermined] Initializing with config:', JSON.stringify(config, null, 2));
